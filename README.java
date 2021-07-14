@@ -20,4 +20,13 @@ public class ATM {
       this.money -= amountToWithdraw;
       totalMoney = totalMoney - amountToWithdraw;
     }
+ 
+  public static void main(String[] args){
+
+    System.out.println("Total number of ATMs: " + ATM.numATMs); 
+    ATM firstATM = new ATM(1000);
+    ATM secondATM = new ATM(500);
+    System.out.println("Total number of ATMs: " + ATM.numATMs);
+    
+  
 }
