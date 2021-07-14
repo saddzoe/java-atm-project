@@ -15,13 +15,13 @@ public class ATM {
  }
  
  
-  public void withdrawMoney(int amountToWithdraw){
+  public void withdrawMoney(int amountToWithdraw) {
     if(amountToWithdraw <= this.money){
       this.money -= amountToWithdraw;
       totalMoney = totalMoney - amountToWithdraw;
     }
  
-  public static void main(String[] args){
+  public static void main(String[] args) {
 
     System.out.println("Total number of ATMs: " + ATM.numATMs); 
     ATM firstATM = new ATM(1000);
