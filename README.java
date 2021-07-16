@@ -16,7 +16,7 @@ public class ATM {
  
  
   public void withdrawMoney(int amountToWithdraw) {
-    if(amountToWithdraw <= this.money){
+    if (amountToWithdraw <= this.money) {
       this.money -= amountToWithdraw;
       totalMoney = totalMoney - amountToWithdraw;
     }
@@ -27,6 +27,13 @@ public class ATM {
     ATM firstATM = new ATM(1000);
     ATM secondATM = new ATM(500);
     System.out.println("Total number of ATMs: " + ATM.numATMs);
+    
+    System.out.println("Total amount of money in all ATMs: " + ATM.totalMoney);  
+    firstATM.withdrawMoney(500);
+    secondATM.withdrawMoney(200);
+    System.out.println("Total amount of money in all ATMs: " + ATM.totalMoney);
+    
+  }
     
   
 }
