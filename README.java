@@ -33,7 +33,12 @@ public class ATM {
     secondATM.withdrawMoney(200);
     System.out.println("Total amount of money in all ATMs: " + ATM.totalMoney);
     
-  }
-    
-  
+  } 
 }
+
+public void withdrawMoney(int amountToWithdraw) {
+    if (amountToWithdraw <= this.money) {
+      this.money -= amountToWithdraw;
+      totalMoney -= amountToWithdraw;
+    }
+  }
