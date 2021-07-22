@@ -42,3 +42,8 @@ public void withdrawMoney(int amountToWithdraw) {
       totalMoney -= amountToWithdraw;
     }
   }
+  
+
+public static void averageMoney() {
+    System.out.println(totalMoney / numATMs);
+  }
