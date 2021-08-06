@@ -63,3 +63,10 @@ public static void main(String[] args) {
    }
    
 }
+
+public void withdrawMoney(int amountToWithdraw) {
+    if (amountToWithdraw <= this.money) {
+      this.money -= amountToWithdraw;
+      totalMoney -= amountToWithdraw;
+    }
+  }
