@@ -85,5 +85,9 @@ public static void main(String[] args) {
     System.out.println("Total amount of money in all ATMs: " + ATM.totalMoney);  
     firstATM.withdrawMoney(500);
     secondATM.withdrawMoney(200);
-    System.out.println("Total amount of money in all ATMs: " + ATM.totalMoney); 
+    System.out.println("Total amount of money in all ATMs: " + ATM.totalMoney);
+  
+    ATM.averageMoney(); 
+
+}
   
